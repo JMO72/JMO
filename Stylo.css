@@ -1,0 +1,142 @@
+/*EJERCICIO CON BOOTSTRAP*/
+
+@import url(https:fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
+body {
+    font-family: Monserrat , sans-serif;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+/*=========MENU============*/
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*--=========SLAIDER DE IMAGENES======--*/
+.carousel-inner {
+    max-height: 39rem;
+}
+
+/*===========Seccion Nuestro Equipo======*/
+.mapa {
+  background: url(./Imagenes/mapa.PNG);
+  width: 100%;
+  height: 500px; 
+}
+
+#local {
+  background: #f3f3f3;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.wrapper {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+/*=====Seccion Equipo Bs. As.=======*/
+#numeros-local div {
+  padding: 0 20px 0 0;
+  height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #f3f3f3;
+}
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#numeros-local p {
+  margin: 0;
+} 
+
+/*===Pantalla Ancha===*/
+@media(max-width:1200px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+  }
+}
+
+/*=====Titulo Formulario====*/
+#titulo-formulario {
+  color:#3f3f3f;
+}
+
+/*====Pie de Pagina=====*/
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: #dfe2eb;
+  text-align: center;
+}
+
+#iconos {
+  font-size: 25px;
+  padding: 0 8px;
+  color: #3f3f3f;
+  text-align: center;
+}
+
+/*--===Media Queries Pantalla Ancha===--*/
+@media(max-width:1200px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+
+/*--===Media Queries Pantalla Chica--======*/
+@media (max-width:768px) {
+  #intro #equipo {
+    width: 90%  !important;
+  }
+
+  #equipo p {
+    display: none;
+  }
+  
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+/*--==Media Queries Pantalla Extra chica--===*/
+@media(max-width: 576p) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center  !important;
+        
+    }
+}
